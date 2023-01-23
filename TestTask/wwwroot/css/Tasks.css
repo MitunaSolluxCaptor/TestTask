@@ -1,0 +1,18 @@
+﻿.main_frame {
+    text-align: center;
+    padding-top: 100px
+}
+.tasks_frame {
+    display: flex;
+    flex-direction: column
+}
+.tel {
+    width: 200px
+}
+.sub{
+    width:200px;
+    margin-left:42%
+}
+button, input, a{
+    margin-top:20px;
+}

@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	    <meta charset="utf-8">
+	    <title>Задание JS</title>
+        <link rel="stylesheet" type="text/css" href=~/css/Tasks.css />
+    </head>
+    <body>
+        <div class="main_frame">
+            <form method="post" action="~/Home/Rec/" id="form" class="tasks_frame" enctype="multipart/form-data">
+                <div>
+                    <input Name="Phone" class="tel" id="tel" type="tel" onblur="telCheck(this)" required/>
+                    <div>
+                        <button onclick="press(this)">Click!</button>
+                    </div>
+                    <div>
+                        <input Name="Files" type="file" onclick="selectPicture(this)" accept="image/jpeg,image/png" />
+                        <button onclick="addPicture(this)">+</button>
+                        <button onclick="removePicture(this)">-</button>
+                    </div>
+                </div>
+                <input class="sub" type="submit" onclick="check()"/>
+            </form>
+            <a href="~/Home">С#</a>
+        </div>
+    </body>
+    <script type="text/javascript" src="~/js/OneTaskScript.js" LANGUAGE="JavaScript"></script>
+</html>
